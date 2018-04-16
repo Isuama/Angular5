@@ -1,9 +1,9 @@
 <div class="login">
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" 
-      (input)="onNameChange($event)"
       placeholder="Your name.." [(ngModel)]="userName">
-      <button type="submit" class="login btn btn-default" [disabled]="!hasWord" (click)="onLogin()">LOG IN</button>
+      <button type="submit" class="login btn btn-default" [disabled]="userName === ''"
+      (click)="onLogin()">LOG IN</button>
       <hr/>
       <p class="print" ng-show="showName">{{ printName }} </p>    
   </div>
