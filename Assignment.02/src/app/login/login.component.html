@@ -1,7 +1,7 @@
 <div class="login">
-      <label for="fname">First Name</label>
+      <p class="username">Username</p>
       <input type="text" id="fname" name="firstname" 
-      placeholder="Your name.." [(ngModel)]="userName">
+      placeholder="Enter Username..." [(ngModel)]="userName" (input)="onUpdateUsername($event)">
       <button type="submit" class="login btn btn-default" [disabled]="userName === ''"
       (click)="onLogin()">LOG IN</button>
       <hr/>

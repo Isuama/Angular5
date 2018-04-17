@@ -34,3 +34,7 @@ div {
 .print{
     text-align: center;
 }
+.username{
+    text-align: center;
+    font-weight: bold;
+}

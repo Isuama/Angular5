@@ -10,6 +10,10 @@ export class LoginComponent {
     printName = '';
     showName = false;
 
+    onUpdateUsername(event: Event) {
+        this.printName = '';
+    }
+
     onLogin() {
     console.log(event);
      this.printName = 'Hello ' + this.userName + '!!!';
